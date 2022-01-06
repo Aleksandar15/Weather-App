@@ -711,6 +711,7 @@ video {
 
 .self-center {
   align-self: center;
+  white-space: nowrap;
 }
 
 .justify-end {

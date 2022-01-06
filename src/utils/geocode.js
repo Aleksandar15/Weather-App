@@ -1,5 +1,6 @@
 const request = require("postman-request");
-require("dotenv").config();
+// require("dotenv").config();
+require("dotenv").config({path: './config/dev.env'});
 
 const geocode = (address, callback) => {
   const geocodeURL = `https://api.mapbox.com/geocoding/v5/mapbox.places/'${encodeURIComponent(address)}'.json?access_token=${process.env.accessKey_mapBox}&limit=1`

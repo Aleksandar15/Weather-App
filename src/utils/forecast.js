@@ -1,5 +1,6 @@
 const request = require("postman-request");
-require("dotenv").config();
+// require("dotenv").config();
+require("dotenv").config({path: './config/dev.env'});
 
 const forecast = (latitute, longitude, callback) => {
   const weatherURL = `http://api.weatherstack.com/current?access_key=${process.env.accessKey_weatherStack}&query=${latitute},${longitude}`;
