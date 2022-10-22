@@ -3,7 +3,7 @@
 <h1 align='center'>Weather App by Aleksandar15</h1>
 <p align='center'>
 Responsive Weather APP with Dark Mode <br>using NodeJS and TailwindCSS. <br>
-<a href="https://weather-app-alek.onrender.com" target="_blank"><img src="https://img.shields.io/badge/DEMO-WeatherApp-9cf.svg?style=flat"></a>
+<a href="https://weather-app-alek.onrender.com" target="_blank"><img src="https://img.shields.io/badge/LIVE_DEMO-WeatherApp-9cf.svg?style=flat"></a>
 </p>
 
 ## Initial Setup
