@@ -1,6 +1,8 @@
 const request = require("postman-request");
 // require("dotenv").config();
-require("dotenv").config({path: './config/dev.env'});
+require("dotenv").config({ path: "./config/dev.env" });
+//^ this "PATH" is Absolute path => starting from root directory
+// & NOT relative path (do NOT create "config" folder inside /utils/)
 
 const forecast = (latitute, longitude, callback) => {
   const weatherURL = `http://api.weatherstack.com/current?access_key=${process.env.accessKey_weatherStack}&query=${latitute},${longitude}`;
@@ -8,7 +10,7 @@ const forecast = (latitute, longitude, callback) => {
   request({ url: weatherURL, json: true }, (error, response) => {
     if (error) {
       callback("Unable to connect to weather services :/", undefined);
-    } else if (response.body.success === false) {
+    } else if (response.body?.success === false) {
       callback("Unable to find location.", undefined);
     } else {
       callback(undefined, {
