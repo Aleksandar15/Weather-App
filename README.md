@@ -6,6 +6,11 @@ Responsive Weather APP with Dark Mode <br>using NodeJS and TailwindCSS. <br>
 <a href="https://weather-app-alek.onrender.com" target="_blank"><img src="https://img.shields.io/badge/LIVE_DEMO-WeatherApp-9cf.svg?style=flat"></a>
 </p>
 
+## About
+A server-side (backend) focused Weather APP project with Handlebars.js & TailwindCSS libraries on the frontend, shows the weather forecast of a given city which a user provides in the search field, with the help of weatherstack.com forecast API & mapbox.com geolocation API.
+- I used *Handlebars.js templating engine* library for simplifying the process of generating HTML templates which are then populated with dynamic data.
+- Tailwind CSS library which includes a collection of pre-written CSS classes I used for styling & I also provided a Dark Mode UI feature.
+
 ## Initial Setup
 
 - Clone this repository.
